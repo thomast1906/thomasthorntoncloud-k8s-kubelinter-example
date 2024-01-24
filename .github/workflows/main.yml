@@ -22,7 +22,7 @@ jobs:
         id: kube-linter-action-scan
         with:
           # Adjust this directory to the location where your kubernetes resources and helm charts are located.
-          directory: valid
+          directory: invalid
           format: sarif
           output-file: ../results/kube-linter.sarif
         continue-on-error: true
